@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srednia arytnetyczna</title>
+</head>
+<body>
+    Religia<input type="number" id="Przedmioty"><br>
+    Wf<input type="number" id="Przedmioty"><br>
+    Plastyka<input type="number" id="Przedmioty"><br>
+    Muzyka<input type="number" id="Przedmioty"><br>
+    Technika<input type="number" id="Przedmioty"><br>
+
+    <button onclick="(srednia)">Oblicz srednia</button>
+
+    <script>
+    function srednia() {
+        var Srednia_religia=parseInt(document.getElementById("Religia").value);
+
+        var Srednia_wf=parseInt(document.getElementById("Wf").value);
+
+        var Srednia_plastyka=parseInt(document.getElementById("Plastyka").value);
+
+        var Srednia_muzyka =parseInt(document.getElementById("Muzyka").value);
+
+        var Srednia_technika =parseInt(document.getElementById("Technika").value);
+
+        var Srednia=(Srednia_religia+Srednia_wf+Srednia_plastyka+Srednia_muzyka+Srednia_technika/5);
+
+        document.write("srednia");
+
+      }
+      </script>
+</body>
+</html>
