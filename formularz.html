@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<link rel="stylesheet" href="arkusz.css">
+   <p style="font-size: xx-large;">Sklep z farbami</p>
+</br></br>
+<form method="get" action="kuba2.php">
+   
+    Producent: <br/>
+    <select name="wybierz" id="wybierz">
+        <option value="Props">Props</option>
+        <option value="Kolorowi">Kolorowi</option>
+        <option value="Tylot">Tylot</option>
+        <option value="Eustachy">Eustachy</option>
+     </select><br/><br/>
+
+   Rodzaj farby: </br>
+   <input type="checkbox" name="rodzaj" value="Plakatowe" id="1">Plakatowe</body></br>
+   <input type="checkbox" name="rodzaj" value="Akrylowe"id="2">Akrylowe</br>
+   <input type="checkbox" name="rodzaj" value="Tempera"id="3">Tempera</br>
+   <input type="checkbox" name="rodzaj" value="Akwarelowe"id="4">Akwarelowe</br><br/>
+
+
+   Kolor farby:<br/>
+   <input type="checkbox" name="kolor" value="Czerwony" id="kolor">Czerwony
+   <input type="checkbox" name="kolor" value="Niebieski" id="kolor">Niebieski
+   <input type="checkbox" name="kolor" value="Zielony" id="kolor">Zielony
+   <input type="checkbox" name="kolor" value="Szary" id="kolor">Szary
+   <input type="checkbox" name="kolor" value="Biały" id="kolor">Biały<br/><br/>
+
+     
+
+
+    Ilość farb:
+    <select name="ilosc" id="ilosc">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option> <br>
+  
+        </select><br/><br/>
+        
+        Ilość ml:<br/>
+        <input type="radio" name="ml" id="ml" value="300ml">300ml
+        <input type="radio" name="ml" id="ml" value="500ml">500ml
+        <input type="radio" name="ml" id="ml" value="1000ml">1000ml
+        <input type="radio" name="ml" id="ml" value="2000ml">2000ml
+        <input type="radio" name="ml" id="ml" value="5000ml">5000ml
+<br>
+        <button onclick="myFunction4()" >Ml</button><br>
+        <script>
+           function myFunction4() {
+               var ggg= document.getElementById("ml").value;
+   var ggg=document.querySelector('input[name="ml"]:checked').value;
+   console.log(ggg);
+           }
+        </script>
+<br>
+
+
+        Rabat:<br/>
+        <input type="radio" name="rabat" id="rabat" value="0%">0%
+        <input type="radio" name="rabat" id="rabat" value="10%">10%
+        <input type="radio" name="rabat" id="rabat" value="20%">20%
+        <input type="radio" name="rabat" id="rabat" value="40%">40%
+        <input type="radio" name="rabat" id="rabat" value="60%">60%
+<br>
+        <button onclick="myFunction3()" >Rabat</button><br>
+        <script>
+           function myFunction3() {
+               var mmm= document.getElementById("rabat").value;
+              var  mmm=document.querySelector('input[name="rabat"]:checked').value;
+              console.log(mmm);
+           }
+        </script>
+<br>
+     Uwagi <input type="text" name="uwagi" id="uwagi"> <br/>
+     <button onclick="myFunction1()" >Uwagi</button>
+     <script>
+        function myFunction1() {
+            var xxx= document.getElementById("uwagi").value;
+            console.log(xxx);
+
+        }
+     </script>
+     <br><br>
+      Adres dostawy <input type="text" name="adres" id="adres"> <br/>
+      <script>
+         function myFunction() {
+             var vvv= document.getElementById("adres").value;
+             console.log(vvv);
+
+         }
+      </script>
+          <button onclick="myFunction()">Adres</button> <br>
+          
+          <br>
+          
+     <button type="submit">Wyślij</button>
+    </form>
+</body>
+</html>
