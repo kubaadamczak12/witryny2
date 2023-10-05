@@ -90,7 +90,7 @@ if ($f=="tosNo")
 
 
 
-$con = new mysqli("127.0.0.1","root","","kuba");
+$con = new mysqli("127.0.0.1","root","","daniel");
 $q="INSERT INTO `formularz` (`lp`, `nazwa`, `haslo`, `opis`) VALUES ('".rand(1,200)."', '".$a."', '".$b."', '".$c.','.$d1.','.$d2.','.$d3.','.$e1.','.$e2.','.$e3.','.$f."')";
 $wynik=$con->query($q);
 
