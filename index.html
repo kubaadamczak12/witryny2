@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Imię:</b> <input type="text" name="imie" id="imie"><br>
+    <br>
+    <b>Nazwisko:</b> <input type="text" name="nazwisko" id="nazwisko"><br>
+    <br>
+    <b>Pesel:</b> <input type="number" name="pesel" id="pesel"><br>
+    <br>
+    <b>kraj:</b> <input type="text" name="zawod" id="zawod"><br><br>
+    <button onclick="wypisz()">Wypisz</button>
+    <script>
+        function wypisz() {
+        $imie_wynik=document.getElementById("imie").value;
+ $nazwisko_wynik=document.getElementById("nazwisko").value;
+$pesel_wynik=document.getElementById("pesel").value;
+$kraj_wynik=document.getElementById("zawod").value;
+const tab = [];
+tab.push($imie_wynik);
+tab.push($nazwisko_wynik);
+tab.push($pesel_wynik);
+tab.push($kraj_wynik);
+console.log(tab);
+tab.push("jebacGRUBEGOdZisiajnie");
+console.log(tab[0]);
+tab.sort();
+console.log( tab );
+        }
+        </script>
+</body>
+</html>
