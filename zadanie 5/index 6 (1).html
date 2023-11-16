@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <style>
+        #menel{
+            width: 230px;
+            height: 230px;
+            border-style: solid;
+        }
+        #meneljebany{
+            width: 240px;
+            height: 240px;
+            border-style: solid;
+        }
+    </style>
+    <div id="menel"><img src="menel.jpg">
+    <p id="meneltekst"></p>
+    </div>
+    <br>
+    <p id="japko"></p>
+    <br>
+    <div id="meneljebany"><img src="meneljebany.jpg">
+    <p id="meneljebanytekst"></p>
+    </div>
+    
+
+    <script>
+        menel.addEventListener("mouseover", menelFunkcja);
+        function menelFunkcja() {
+            document.getElementById("meneltekst").innerHTML = "menel1"
+        }
+    
+
+        document.addEventListener("click", Japkofunkcja);
+        function Japkofunkcja() {
+          document.getElementById("japko").innerHTML = "Japko Spacja";
+        }
+
+
+        meneljebany.addEventListener("mouseout", meneljebanyFunkcja);
+        function meneljebanyFunkcja() {
+            document.getElementById("meneljebanytekst").innerHTML = "meneljebany1"
+        }
+    </script>
+
+
+
+</body>
+</html>
